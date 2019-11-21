@@ -1,0 +1,13 @@
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+</div>
+
+<div class="spacer"></div>
+<a href=<%= "/articles/#{@article.id}/edit" %>>Edit Article</a>
+<div class="spacer"></div>
+<%= link_to ("<i class='fa fa-trash'>delete</i>").html_safe, @article.id.to_s, 
+  data: {:confirm => 'Are you sure?'}, :method => :delete%>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<a href="/articles">Back</a>
