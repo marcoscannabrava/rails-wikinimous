@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RailsWikinimous</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,14 @@
   </head>
 
   <body>
+
+  <nav class="bg-light border-bottom navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Rails Wikinimous</a>
+      <a href="/articles/new">New Article</a>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="spacer"></div>
     <%= yield %>
   </body>
 </html>
